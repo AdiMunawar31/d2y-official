@@ -1,8 +1,11 @@
+import Breadcrumb from "@/components/Breadcrumb";
+import CardBlogItem from "@/components/CardBlogItem";
 import React from "react";
 
 const page = () => {
   return (
     <div>
+      <Breadcrumb />
       <div className="flex justify-center items-center">
         {/*- more free and premium Tailwind CSS components at https://tailwinduikit.com/ -*/}
         <div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
@@ -231,6 +234,7 @@ const page = () => {
               </div>
             </div>
           </div>
+          <CardBlogItem />
         </div>
       </div>
     </div>
