@@ -9,9 +9,19 @@ export default function Home() {
       <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
         <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10">
-            The Freedom to Create the
-            <span className="text-gray-600">Websites</span>
-            You Want
+            <span className="pb-2">The Freedom to Create The Applications</span>
+            <div className=" text-center space-y-16 mt-4">
+              <div className="text-center text-5xl font-bold">
+                Services offered{" "}
+                <div className="relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">
+                  <span className="animate-word col-span-full row-span-full text-blue-300"> ReactJs</span>
+                  <span className="animate-word-delay-1 col-span-full row-span-full text-gray-500"> NextJs</span>
+                  <span className="animate-word-delay-2 col-span-full row-span-full text-green-700"> VueJS</span>
+                  <span className="animate-word-delay-3 col-span-full row-span-full text-red-600"> Angular</span>
+                  <span className="animate-word-delay-4 col-span-full row-span-full text-blue-500"> Flutter</span>
+                </div>
+              </div>
+            </div>
           </h1>
           <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-sm sm:text-lg">
             A professonal website drives sales. Create a beautiful website to impress and engage new customers and

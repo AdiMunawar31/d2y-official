@@ -13,7 +13,7 @@ const Navbar = () => {
           <div id="menu" className="md:block hidden ml-20">
             <ul className="flex text-xl font-bold md:text-base items-center py-8 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
               <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
-                <a href="/">Feature</a>
+                <Link href="/tutorial">Tutorial</Link>
               </li>
               <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
                 <Link href="/blog">Blog</Link>
@@ -22,10 +22,10 @@ const Navbar = () => {
                 <Link href="/forum">Forum</Link>
               </li>
               <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                <a href="/faq">FAQ</a>
+                <Link href="/faq">FAQ</Link>
               </li>
               <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                <a href="/">Contact</a>
+                <Link href="/">Contact</Link>
               </li>
             </ul>
           </div>
