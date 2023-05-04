@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-white dark:bg-gray-900">
-        <div className="container mx-auto py-6">
+        <div className="py-6">
           <hr className="my-6 border-gray-200 dark:border-gray-700 md:my-10" />
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ml-20">
             <div>
               <p className="font-semibold text-gray-800 dark:text-white">Quick Link</p>
               <div className="mt-5 flex flex-col items-start space-y-2">
@@ -97,7 +97,7 @@ const Footer = () => {
             </div>
           </div>
           <hr className="my-6 border-gray-200 dark:border-gray-700 md:my-10" />
-          <div className="flex flex-col items-center justify-between sm:flex-row">
+          <div className="flex flex-col items-center justify-between sm:flex-row mx-16">
             <Link href="/" className="text-2xl font-medium text-blue-500">
               <Image
                 className="w-12 md:w-auto cursor-pointer"
