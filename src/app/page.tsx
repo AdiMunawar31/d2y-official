@@ -1,42 +1,20 @@
+import Testimonial from "@/components/Home/Testimonial";
+import Header from "@/components/Home/Header";
 import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Sponsorship from "@/components/Home/Sponsorship";
+import Requirement from "@/components/Home/Requirement";
+import CardBlog from "@/components/Home/CardBlog";
+import NewsLetter from "@/components/Home/NewsLetter";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
-        <div className="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10">
-            <span className="pb-2">The Freedom to Create The Applications</span>
-            <div className=" text-center space-y-16 mt-4">
-              <div className="text-center text-5xl font-bold">
-                Services offered{" "}
-                <div className="relative inline-grid grid-cols-1 grid-rows-1 gap-12 overflow-hidden">
-                  <span className="animate-word col-span-full row-span-full text-blue-300"> ReactJs</span>
-                  <span className="animate-word-delay-1 col-span-full row-span-full text-gray-500"> NextJs</span>
-                  <span className="animate-word-delay-2 col-span-full row-span-full text-green-700"> VueJS</span>
-                  <span className="animate-word-delay-3 col-span-full row-span-full text-red-600"> Angular</span>
-                  <span className="animate-word-delay-4 col-span-full row-span-full text-blue-500"> Flutter</span>
-                </div>
-              </div>
-            </div>
-          </h1>
-          <p className="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-sm sm:text-lg">
-            A professonal website drives sales. Create a beautiful website to impress and engage new customers and
-            establish your business online{" "}
-          </p>
-        </div>
-        <div className="flex justify-center items-center">
-          <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 bg-black transition duration-150 ease-in-out hover:bg-gray-900 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-gray-900 py-2 sm:py-4 text-sm">
-            Get Started
-          </button>
-          <button className="ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 bg-transparent transition duration-150 ease-in-out hover:border-gray-900 lg:text-xl lg:font-bold  hover:text-gray-900 rounded border border-gray-900 text-gray-900 px-4 sm:px-10 py-2 sm:py-4 text-sm">
-            Live Demo
-          </button>
-        </div>
-      </div>
+    <main className="flex min-h-screen flex-col items-center justify-between pt-16">
+      <Header />
+      <Requirement />
+      <CardBlog />
+      <Testimonial />
+      <Sponsorship />
+      <NewsLetter />
     </main>
   );
 }

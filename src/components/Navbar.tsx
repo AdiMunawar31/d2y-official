@@ -4,48 +4,90 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="w-full border-b">
-      <div className="py-2 md:py-0 container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" aria-label="Home. logo" role="img">
-          <Image className="w-12 md:w-auto" src="/am.png" width={50} height={30} draggable alt="logo" />
-        </Link>
-        <div>
-          <div id="menu" className="md:block hidden ml-20">
-            <ul className="flex text-xl font-bold md:text-base items-center py-8 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
-              <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
-                <Link href="/tutorial">Tutorial</Link>
-              </li>
-              <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                <Link href="/blog">Blog</Link>
-              </li>
-              <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                <Link href="/forum">Forum</Link>
-              </li>
-              <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                <Link href="/faq">FAQ</Link>
-              </li>
-              <li className="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                <Link href="/">Contact</Link>
-              </li>
-            </ul>
-          </div>
+    <header className="container mb-20">
+      {/* Navbar */}
+      <nav className="flex justify-between md:justify-around py-5 bg-white/80 backdrop-blur-md shadow-md w-full sm:px-16 fixed top-0 left-0 right-0 z-10 px-3">
+        {/* Logo Container */}
+        <div className="flex items-center">
+          {/* Logo */}
+          <Link href="/" className="text-2xl font-medium text-blue-500">
+            <Image
+              className="w-12 md:w-auto cursor-pointer"
+              src="/am.png"
+              width={50}
+              height={30}
+              draggable
+              alt="logo"
+            />
+          </Link>
         </div>
+        {/* Links Section */}
+        <div className="items-center ml-16 md:space-x-8 justify-center justify-items-start md:justify-items-center md:flex md:pt-2 w-full left-0 top-16 px-5 md:px-10 py-3 md:py-0 border-t md:border-t-0">
+          <Link
+            href="/showcase"
+            className="flex text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300"
+          >
+            Showcase
+          </Link>
+          <Link
+            href="/tutorial"
+            className="flex text-gray-600 cursor-pointer transition-colors duration-300 font-semibold hover:text-blue-600"
+          >
+            Tutorials
+          </Link>
+          <Link
+            href="/blog"
+            className="flex text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300"
+          >
+            Blog
+          </Link>
+          <Link
+            href="/forum"
+            className="flex text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300"
+          >
+            Forum
+          </Link>
+          <Link
+            href="/faq"
+            className="flex text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300"
+          >
+            Faq
+          </Link>
+          <a className="flex text-gray-600 hover:text-blue-500 cursor-pointer transition-colors duration-300">
+            About Us
+          </a>
+        </div>
+        {/* Auth Links */}
         <div className="flex">
           <Link
             href="/login"
-            className="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-gray-900 text-gray-900 px-4 py-1"
+            className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-gray-300 text-gray-900 px-4 py-1"
           >
             Login
           </Link>
           <Link
             href="/register"
-            className="focus:outline-none lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 hidden md:block bg-black transition duration-150 ease-in-out hover:bg-gray-900 rounded text-gray-300 px-4 py-1 ml-2"
+            className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 hidden md:block bg-black transition duration-150 ease-in-out hover:bg-gray-900 rounded text-white px-4 py-1 ml-2"
           >
             Register
           </Link>
         </div>
-      </div>
-    </nav>
+        {/* Hamberger Menu */}
+        <button className="w-10 h-10 md:hidden justify-self-end rounded-full hover:bg-gray-100">
+          <svg
+            className="mx-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+          >
+            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+          </svg>
+        </button>
+      </nav>
+    </header>
   );
 };
 

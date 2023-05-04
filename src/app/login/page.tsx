@@ -3,7 +3,7 @@ import React from "react";
 
 const Login = () => {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen -mt-1">
       {/* Container */}
       <div className="flex flex-row w-full">
         {/* Sidebar */}

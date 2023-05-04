@@ -2,7 +2,7 @@ import React from "react";
 
 const Breadcrumb = () => {
   return (
-    <div>
+    <div className="-mt-1">
       {/* Breadcrumb */}
       <nav
         className="flex bg-gray-50 text-gray-700 border border-gray-200 py-3 px-5 dark:bg-gray-800 dark:border-gray-700"
